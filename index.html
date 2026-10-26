@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介 - りゅう</title>
+</head>
+<body>
+
+    <h1>りゅうの自己紹介</h1>
+
+    <h2>プロフィール</h2>
+    <p>プロフィール写真：</p>
+    <p><img src="img/F1.jpg" alt="プロフィールの写真" width="300"></p>
+    <p>写真撮影や車、モータースポーツが好きです。</p>
+    <!-- 2ページ目へのリンク（サイト内移動） -->
+    <p><a href="detail.html">詳細プロフィール</a></p>
+
+    <h2>好きな食べ物ランキング TOP3</h2>
+    <p>特に好きな食べ物のトップ3です。</p>
+    <ol>
+        <li>焼肉</li>
+        <li>蟹</li>
+        <li>ラーメン</li>
+    </ol>
+
+    <h2>趣味・関心のあること</h2>
+    <p>普段楽しんでいる趣味の一覧です。</p>
+    <ul>
+        <li>カメラ・モータースポーツ写真撮影</li>
+        <li>F1観戦</li>
+        <li>車・バイク</li>
+    </ul>
+
+    <!-- 課題条件：表（table） -->
+    <h2>一週間のスケジュール</h2>
+    <table border="1">
+        <tr>
+            <th>区分</th>
+            <th>主な活動</th>
+        </tr>
+        <tr>
+            <td>平日</td>
+            <td>大学の授業</td>
+        </tr>
+        <tr>
+            <td>休日</td>
+            <td>アルバイト</td>
+        </tr>
+    </table>
+
+    <h2>おすすめWebサイト</h2>
+    <p>よくチェックしているモータースポーツの公式サイトです。</p>
+    <!-- 外部Webサイトへのリンク -->
+    <p><a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer">Formula 1 公式サイト（外部サイト）</a></p>
+
+    <!-- 課題条件：フォーム（form） -->
+    <h2>お問い合わせ・メッセージ</h2>
+    <form action="" method="get">
+        <p>
+            <label for="visitor-name">お名前：</label><br>
+            <input type="text" id="visitor-name" name="visitor-name" placeholder="お名前">
+        </p>
+        <p>
+            <label for="message">メッセージ：</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="メッセージを入力してください"></textarea>
+        </p>
+        <p>
+            <button type="submit">送信</button>
+        </p>
+    </form>
+
+</body>
+</html>
