@@ -16,3 +16,24 @@ table, th, td {
     color: #cc3300;
     font-weight: bold;
 }
+
+a, button {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* --- 写真の動き（マウスを置くとふんわり、クリック中にもっと拡大） --- */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); 
+}
+
+img:active {
+    transform: scale(1.6); 
+}

@@ -11,7 +11,12 @@
 
     <h2>プロフィール</h2>
     <p>プロフィール写真：</p>
-    <p><img src="img/F1.jpg" alt="プロフィールの写真" width="300"></p>
+    <p><img src="img/F1.jpg" alt="プロフィールの写真" width="300"class="zoom-thumbnail" onclick="document.getElementById('photoModal').showModal()"></p>
+    <dialog id="photoModal" class="lightbox" onclick="this.close()">
+        <img src="img/F1.jpg" alt="プロフィールの拡大写真">
+        <p class="close-text">× クリックして閉じる</p>
+    </dialog>
+
     <p>写真撮影や車、モータースポーツが好きです。</p>
     <!-- 2ページ目へのリンク（サイト内移動） -->
     <p><a href="detail.html">詳細プロフィール</a></p>
