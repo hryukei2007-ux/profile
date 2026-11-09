@@ -1,0 +1,20 @@
+.logo, nav {
+    display: inline-block;
+}
+
+header, footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    margin-left: 16px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}

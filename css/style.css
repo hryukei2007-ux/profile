@@ -1,22 +1,70 @@
+/* --- 基本設定 --- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
 h1 {
     color: #ff0000;
 }
-body {
-    font-family: sans-serif;
+
+/* --- ヘッダー・フッターのデザイン --- */
+header, footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 16px 20px;
 }
 
+/* --- メニュー（ボタン風デザイン） --- */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border-radius: 999px;
+    color: #333333;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+/* --- 本文（中央寄せ・幅の制限） --- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* --- 見出しのスタイルと余白調整 --- */
 h2 {
     border-bottom: 2px solid #333333;
     padding-bottom: 5px;
+    margin-top: 40px; /* 見出しの上の余白を広げる */
 }
+
+/* --- テーブル（表）のスタイル --- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 table, th, td {
     border: 1px solid #333333;
 }
+
+th, td {
+    padding: 8px 12px; /* 表のセルの中に余白を付ける */
+}
+
+/* --- 強調文字のスタイル --- */
 .favorite {
     color: #cc3300;
     font-weight: bold;
 }
 
+/* --- リンク・ボタン・写真のアニメーション --- */
 a, button {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -25,15 +73,17 @@ a:hover {
     opacity: 0.7;
 }
 
-/* --- 写真の動き（マウスを置くとふんわり、クリック中にもっと拡大） --- */
+/* 写真の基本の動き（なめらかに変化するおまじない） */
 img {
     transition: transform 0.3s ease;
 }
 
+/* ① カーソルを置いたとき：ふんわり少し大きくなる */
 img:hover {
     transform: scale(1.05); 
 }
 
+/* ② クリックしている間：もっと大きくする */
 img:active {
     transform: scale(1.6); 
 }
